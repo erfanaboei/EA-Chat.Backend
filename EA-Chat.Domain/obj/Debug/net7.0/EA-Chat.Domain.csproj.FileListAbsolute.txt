@@ -1,0 +1,11 @@
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\bin\Debug\net7.0\EA-Chat.Domain.deps.json
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\bin\Debug\net7.0\EA-Chat.Domain.dll
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\bin\Debug\net7.0\EA-Chat.Domain.pdb
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\obj\Debug\net7.0\EA-Chat.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\obj\Debug\net7.0\EA-Chat.Domain.AssemblyInfoInputs.cache
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\obj\Debug\net7.0\EA-Chat.Domain.AssemblyInfo.cs
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\obj\Debug\net7.0\EA-Chat.Domain.csproj.CoreCompileInputs.cache
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\obj\Debug\net7.0\EA-Chat.Domain.dll
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\obj\Debug\net7.0\refint\EA-Chat.Domain.dll
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\obj\Debug\net7.0\EA-Chat.Domain.pdb
+D:\ApiProjects\EA-Chat\EA-Chat.Domain\obj\Debug\net7.0\ref\EA-Chat.Domain.dll

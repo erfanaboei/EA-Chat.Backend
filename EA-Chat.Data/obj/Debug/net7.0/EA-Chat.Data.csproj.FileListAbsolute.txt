@@ -1,0 +1,17 @@
+D:\ApiProjects\EA-Chat\EA-Chat.Data\bin\Debug\net7.0\EA-Chat.Data.deps.json
+D:\ApiProjects\EA-Chat\EA-Chat.Data\bin\Debug\net7.0\EA-Chat.Data.runtimeconfig.json
+D:\ApiProjects\EA-Chat\EA-Chat.Data\bin\Debug\net7.0\EA-Chat.Data.dll
+D:\ApiProjects\EA-Chat\EA-Chat.Data\bin\Debug\net7.0\EA-Chat.Data.pdb
+D:\ApiProjects\EA-Chat\EA-Chat.Data\bin\Debug\net7.0\EA-Chat.Domain.dll
+D:\ApiProjects\EA-Chat\EA-Chat.Data\bin\Debug\net7.0\EA-Chat.Domain.pdb
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\EA-Chat.Data.csproj.AssemblyReference.cache
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\EA-Chat.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\EA-Chat.Data.AssemblyInfoInputs.cache
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\EA-Chat.Data.AssemblyInfo.cs
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\EA-Chat.Data.csproj.CoreCompileInputs.cache
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\EA-Chat.Data.csproj.CopyComplete
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\EA-Chat.Data.dll
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\refint\EA-Chat.Data.dll
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\EA-Chat.Data.pdb
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\EA-Chat.Data.genruntimeconfig.cache
+D:\ApiProjects\EA-Chat\EA-Chat.Data\obj\Debug\net7.0\ref\EA-Chat.Data.dll

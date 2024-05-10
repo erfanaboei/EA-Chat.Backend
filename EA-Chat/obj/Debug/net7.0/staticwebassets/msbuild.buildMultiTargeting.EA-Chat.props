@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EA-Chat.props" />
+</Project>
