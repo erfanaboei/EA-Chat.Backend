@@ -1,6 +1,10 @@
+using System.Text;
+using EA_Chat.Application.Extensions;
 using EA_Chat.Data.Context;
 using EA_Chat.IOC.Dependencies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,22 +17,20 @@ builder.Services.AddSwaggerGen();
 
 #region AddServices
 
+builder.Services.AddApplicationService(builder.Configuration);
 builder.Services.RegisterServices();
-
-#endregion
-
-#region AddDbContext
-
-builder.Services.AddDbContext<EAChatContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("EA-Chat-ConnectionString"));
-});
 
 #endregion
 
 #region Add Cors
 
 builder.Services.AddCors();
+
+#endregion
+
+#region Add Authentication
+
+builder.Services.AddIdentityService(builder.Configuration);
 
 #endregion
 
@@ -43,13 +45,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-
 #region Use Cors
 
 app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
 
 #endregion
+
+app.UseAuthentication();
+app.UseAuthorization();
+
 
 app.MapControllers();
 
