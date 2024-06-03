@@ -2,7 +2,6 @@
 using EA_Chat.Application.Utilities;
 using EA_Chat.Domain.DTOs.AccountDTOs;
 using EA_Chat.Domain.DTOs.UserDTOs;
-using EA_Chat.Domain.Models.Users;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -39,16 +38,7 @@ public class AccountController : BaseController
 
         var registerResult = await _userService.Register(dto, cancellationToken);
 
-        if (!registerResult.IsSuccess)
-            return new RequestResult<UserDto>(false, registerResult.StatusCode, null, registerResult.Message);
-        
-        var loginResult = await _userService.Login(new LoginDto()
-        {
-            UserName = dto.UserName,
-            Password = dto.Password
-        }, cancellationToken);
-
-        return loginResult;
+        return new RequestResult<UserDto>(registerResult.IsSuccess, registerResult.StatusCode, null, registerResult.Message);
     }
 
     [HttpPost("[action]")]

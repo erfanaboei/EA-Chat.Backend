@@ -57,7 +57,7 @@ public class UserService: IUserService
 
     public async Task<RequestResult<UserDto>> Login(LoginDto dto, CancellationToken cancellationToken)
     {
-        var user = await GetByUsernameAndPassword(dto.UserName.ToLower().Trim(), _passwordHelper.EncodePasswordMd5(dto.Password), cancellationToken);
+        var user = await GetByUsernameAndPassword(dto.Username.ToLower().Trim(), _passwordHelper.EncodePasswordMd5(dto.Password), cancellationToken);
         if (user == null)
             return new RequestResult<UserDto>(false, RequestResultStatusCode.NotFound, null, "کاربری با مشخصات وارد شده یافت نشد!");
 
@@ -69,10 +69,12 @@ public class UserService: IUserService
             RequestResultStatusCode.Success,
             new UserDto()
             {
-                UserName = user.UserName,
+                Username = user.UserName,
                 Email = user.Email,
                 Mobile = user.Mobile,
-                Token = _tokenService.CreateToken(user)
+                Token = _tokenService.CreateToken(user),
+                IsActivate = user.IsActive,
+                RegisterData = user.RegisterDate.ToShortDateString()
             },
             "شما با موفقیت وارد حساب کاربری خود شدید.");
     }

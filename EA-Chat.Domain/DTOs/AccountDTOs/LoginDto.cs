@@ -9,7 +9,7 @@ public class LoginDto
     [Display(Name = "نام کاربری")]
     [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
     [MaxLength(100, ErrorMessage = "حداکثر کاراکتر مجاز {1} میباشد")]
-    public string UserName { get; set; }
+    public string Username { get; set; }
     
     [Display(Name = "رمز عبور")]
     [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
